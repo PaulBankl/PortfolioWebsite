@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Paul Bankl Portfolio</title>
+    <meta name="author" content="Paul Bankl">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  </head>
+  
+  <body>
+
+    <section id="IntroArea">
+        <div id="leftsideIntro">
+            <div id = "leftBar">
+                <a href="#IntroArea">Paul Bankl - Portfolio</a>
+            </div>
+             <p id="p1">Portfolio</p>
+     <h1 id="Name">Paul <br> Bankl</h1>
+      <hr>
+     <p id="p2">Media Technology Student</p>
+        </div>
+        <div id="rightsideIntro">
+            <nav class="navbar">
+                    <a href="#IntroArea">Home</a>
+                    <a href="#Education">Education</a>
+                    <a href="#Skills">Skills</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#AboutMe">About Me</a>
+                    <a href="#footer">Impressum</a>
+            </nav>
+            </div>
+            <div id="SocialLinks">
+                <a href="https://github.com/paulbankl" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/paul-bankl" target="_blank">LinkedIn</a>
+            </div>
+    </section>
+    <section id="Education">
+        <hr>
+        <p>I am a Media Technology student at the University of Applied Sciences in Salzburg. I have a passion for software development, game design, and backend-focused projects. I enjoy creating innovative solutions and exploring new technologies.</p> <vr></vr>
+    </section>
+    <section id="Skills">
+        <h2>Skills</h2>
+        <p>I have experience in various programming languages and technologies, including Python, Java, and web development frameworks. I am also familiar with database management and cloud computing platforms.</p>
+    </section>
+    <section id="Projects">
+        <h2>Projects</h2>
+        <p>I have worked on various projects throughout my studies, including software development, game design, and backend-focused applications. I enjoy creating innovative solutions and exploring new technologies.</p>
+    </section>
+    <section id="AboutMe">
+        <h2>About Me</h2>
+        <p>Hi, my name is Paul Bankl and I am a Media Technology student at the University of Applied Sciences in Salzburg. I have a passion for software development, game design, and backend-focused projects. I enjoy creating innovative solutions and exploring new technologies.</p>
+    </section>
+
+
+
+
+
+<footer id="footer">
+    <p>Copyright © 2026 Paul Bankl</p>
+
+  </footer>
+  <script>
+    const navbar = document.querySelector(".navbar");
+    const leftBar = document.getElementById("leftBar");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 80) {
+            navbar.classList.add("scrolled");
+            leftBar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+            leftBar.classList.remove("scrolled");
+        }
+    });
+</script>
+  </body>
+
+</html>

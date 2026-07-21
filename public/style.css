@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Intro Area */
+#IntroArea {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+#leftsideIntro{
+    background-color: black;
+    flex: 1 1 50vw;
+    width: 50vw;
+    color:gray;
+}
+#p1{
+    margin-top: 55vh;
+    margin-left: 3vw;
+    margin-bottom: 0;
+    font-family: "Barlow Condensed", Arial, sans-serif;
+    font-weight: 400;
+    color:#b0b0b0
+
+}
+
+#p2{
+    color:#b0b0b0;
+    margin-left: 3vw;
+    margin-top: .5vh;
+    font-family: "Barlow Condensed", Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+#leftsideIntro hr{
+    color: gray;
+    width: 4vw;
+     margin-top: 2vh;
+    margin-left: 3vw;
+    margin-bottom:0;
+}
+#leftsideIntro h1{
+    color: white;
+    margin-top:0vh;
+    margin-left: 3vw;
+    font-family: "Barlow Condensed", Arial, sans-serif;
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: .9;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+}
+#rightsideIntro{
+    background-image: url("images/profilepic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 1 50vw;
+    width: 50vw;
+}
+#leftBar a{
+    position: fixed;
+    width: 50vw;
+    color: black;
+    height: 5vh;
+    margin-top: 0;
+    padding-left: 3vw;
+    padding-top: 1.5vh;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50vw;
+    margin-top: 0;
+    height: 5vh;
+}
+.navbar a{
+    margin-left: 3vw;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+.navbar.scrolled{
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+.navbar.scrolled a{
+    color: black;
+    text-shadow: none;
+}
+#leftBar.scrolled a{
+    background-color: white;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+
+
+
+hr{
+    width: 80%;
+}
