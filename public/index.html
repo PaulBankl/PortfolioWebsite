@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Paul Bankl Portfolio</title>
     <meta name="author" content="Paul Bankl">
     <meta charset="utf-8">
@@ -8,77 +9,108 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
-  </head>
-  
-  <body>
+</head>
+
+<body>
 
     <section id="IntroArea">
         <div id="leftsideIntro">
-            <div id = "leftBar">
+            <div id="leftBar">
                 <a href="#IntroArea">Paul Bankl - Portfolio</a>
             </div>
-             <p id="p1">Portfolio</p>
-     <h1 id="Name">Paul <br> Bankl</h1>
-      <hr>
-     <p id="p2">Media Technology Student</p>
+            <p id="p1">Portfolio</p>
+            <h1 id="Name">Paul <br> Bankl</h1>
+            <hr>
+            <p id="p2">Media Technology Student</p>
         </div>
         <div id="rightsideIntro">
             <nav class="navbar">
-                    <a href="#IntroArea">Home</a>
-                    <a href="#Education">Education</a>
-                    <a href="#Skills">Skills</a>
-                    <a href="#Projects">Projects</a>
-                    <a href="#AboutMe">About Me</a>
-                    <a href="#footer">Impressum</a>
+                <a href="#IntroArea">Home</a>
+                <a href="#Education">Education</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Projects">Projects</a>
+                <a href="#AboutMe">About Me</a>
+                <a href="#footer">Impressum</a>
             </nav>
-            </div>
-            <div id="SocialLinks">
-                <a href="https://github.com/paulbankl" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/paul-bankl" target="_blank">LinkedIn</a>
+            <div class="socials">
+                <div>
+                    <p>Email</p>
+                    <p>GitHub</p>
+                    <p>LinkedIn</p>
+                </div>
+                <div>
+                    <a href="mailto:paul.n.bankl@gmail.com">paul.n.bankl@gmail.com</a>
+                    <a href="https://github.com/PaulBankl" target="_blank">github.com/PaulBankl</a>
+                    <a href="https://www.linkedin.com/in/paul-bankl" target="_blank">www.linkedin.com/in/paul-bankl</a>
+                </div>
             </div>
     </section>
     <section id="Education">
+        <div class="topRows">
+            <p>01</p>
+            <hr>
+            <p id="EducationTitle">Education</p>
+        </div>
+        <div class="edu">
+            <div>
+                <p>2016-2024</p>
+                <h1>Matura</h1>
+                <p>Gymnasium der Kreuzschwestern Linz</p>
+            </div>
+            <div class="vertical-line"></div>
+            <div>
+                <p>2024-2027</p>
+                <h1>B.Sc. Media Technology and Design</h1>
+                <a href="https://fh-ooe.at/campus-hagenberg" target="_blank">University of Applied Sciences Upper Austria — FH Hagenberg</a>
+            </div>
+        </div>
         <hr>
-        <p>I am a Media Technology student at the University of Applied Sciences in Salzburg. I have a passion for software development, game design, and backend-focused projects. I enjoy creating innovative solutions and exploring new technologies.</p> <vr></vr>
     </section>
     <section id="Skills">
-        <h2>Skills</h2>
-        <p>I have experience in various programming languages and technologies, including Python, Java, and web development frameworks. I am also familiar with database management and cloud computing platforms.</p>
+        <div class="topRows">
+            <p>02</p>
+            <hr>
+            <p id="SkillsTitle">Skills</p>
+        </div>
     </section>
     <section id="Projects">
         <h2>Projects</h2>
-        <p>I have worked on various projects throughout my studies, including software development, game design, and backend-focused applications. I enjoy creating innovative solutions and exploring new technologies.</p>
+        <p>I have worked on various projects throughout my studies, including software development, game design, and
+            backend-focused applications. I enjoy creating innovative solutions and exploring new technologies.</p>
     </section>
     <section id="AboutMe">
         <h2>About Me</h2>
-        <p>Hi, my name is Paul Bankl and I am a Media Technology student at the University of Applied Sciences in Salzburg. I have a passion for software development, game design, and backend-focused projects. I enjoy creating innovative solutions and exploring new technologies.</p>
+        <p>Hi, my name is Paul Bankl and I am a Media Technology student at the University of Applied Sciences in
+            Salzburg. I have a passion for software development, game design, and backend-focused projects. I enjoy
+            creating innovative solutions and exploring new technologies.</p>
     </section>
 
 
 
 
 
-<footer id="footer">
-    <p>Copyright © 2026 Paul Bankl</p>
+    <footer id="footer">
+        <p>Copyright © 2026 Paul Bankl</p>
 
-  </footer>
-  <script>
-    const navbar = document.querySelector(".navbar");
-    const leftBar = document.getElementById("leftBar");
+    </footer>
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const leftBar = document.getElementById("leftBar");
 
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 80) {
-            navbar.classList.add("scrolled");
-            leftBar.classList.add("scrolled");
-        } else {
-            navbar.classList.remove("scrolled");
-            leftBar.classList.remove("scrolled");
-        }
-    });
-</script>
-  </body>
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 80) {
+                navbar.classList.add("scrolled");
+                leftBar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+                leftBar.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
 
 </html>
