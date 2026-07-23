@@ -17,24 +17,25 @@ body {
     flex-direction: row;
     margin: 0;
 }
-#leftsideIntro{
+
+#leftsideIntro {
     background-color: black;
     flex: 1 1 50vw;
     width: 50vw;
-    color:gray;
+    color: gray;
 }
-#p1{
+
+#p1 {
     margin-top: 55vh;
     margin-left: 3vw;
     margin-bottom: 0;
     font-family: "Barlow Condensed", Arial, sans-serif;
     font-weight: 400;
-    color:#b0b0b0
-
+    color: #b0b0b0
 }
 
-#p2{
-    color:#b0b0b0;
+#p2 {
+    color: #b0b0b0;
     margin-left: 3vw;
     margin-top: .5vh;
     font-family: "Barlow Condensed", Arial, sans-serif;
@@ -42,16 +43,17 @@ body {
     letter-spacing: 0.05em;
 }
 
-#leftsideIntro hr{
+#leftsideIntro hr {
     color: gray;
     width: 4vw;
-     margin-top: 2vh;
+    margin-top: 2vh;
     margin-left: 3vw;
-    margin-bottom:0;
+    margin-bottom: 0;
 }
-#leftsideIntro h1{
+
+#leftsideIntro h1 {
     color: white;
-    margin-top:0vh;
+    margin-top: 0vh;
     margin-left: 3vw;
     font-family: "Barlow Condensed", Arial, sans-serif;
     font-size: 8rem;
@@ -61,15 +63,17 @@ body {
     letter-spacing: 0.02em;
     margin-bottom: 0;
 }
-#rightsideIntro{
-    background-image: url("images/profilepic.jpg");
+
+#rightsideIntro {
+    background-image: url(images/profilepic.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     flex: 1 1 50vw;
     width: 50vw;
 }
-#leftBar a{
+
+#leftBar a {
     position: fixed;
     width: 50vw;
     color: black;
@@ -79,7 +83,10 @@ body {
     padding-top: 1.5vh;
 }
 
-.navbar{
+.navbar {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -88,21 +95,25 @@ body {
     margin-top: 0;
     height: 5vh;
 }
-.navbar a{
-    margin-left: 3vw;
+
+.navbar a {
+    margin-left: 5vw;
     text-decoration: none;
     color: white;
     text-shadow: 0px 0px 5px black;
 }
-.navbar.scrolled{
+
+.navbar.scrolled {
     background-color: white;
     border-bottom: 1px solid black;
 }
-.navbar.scrolled a{
+
+.navbar.scrolled a {
     color: black;
     text-shadow: none;
 }
-#leftBar.scrolled a{
+
+#leftBar.scrolled a {
     background-color: white;
     border-bottom: 1px solid black;
     text-decoration: none;
@@ -110,15 +121,17 @@ body {
 
 .socials {
     display: grid;
-    grid-template-columns: 1fr 2fr ;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
     width: 38vw;
     height: auto;
     margin-top: 70vh;
     margin-left: 7vw;
-    
+
 }
-.socials a, .socials p{
+
+.socials a,
+.socials p {
     color: white;
     text-decoration: none;
     text-shadow: 0px 0px 5px black;
@@ -126,59 +139,281 @@ body {
     margin: 0;
     margin-bottom: 1rem;
 }
-.socials a{
+
+.socials a {
     display: block;
 }
 
-hr{
+hr {
     width: 70vw;
 }
 
 /* Education */
 
-#Education{
+#Education {
     height: 55vh;
     margin: 0;
 }
-.topRows{
+
+.topRows {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 14vh;
+    margin-top: 10vh;
     width: 80vw;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-bottom: 5vw;
     gap: 1rem;
+    white-space: nowrap;
 }
+
 .edu {
     margin-left: 33vw;
     color: black;
-     display: flex;
+    display: flex;
     flex-direction: row;
     gap: 3rem;
     margin-bottom: 15vh;
-    margin-bottom: 20vh;
 }
-.edu a{
+
+.edu a {
     text-decoration: none;
     color: black;
     display: block;
 }
-.vertical-line{
+
+.vertical-line {
     margin-top: -2vh;
     width: 1px;
     background-color: gray;
     height: 20vh;
 }
-#Education hr{
+
+#Education hr {
     width: 80vw;
     margin: 0 auto;
 }
 
 /* Skills */
 
-#Skills hr{
+#Skills hr {
     width: 80vw;
     margin: 0 auto;
+}
+
+#Skills .topRows {
+    margin-top: 6vh;
+}
+
+
+#SkillList {
+    margin-left: 10vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#skillbox1,
+#skillbox3 {
+    flex: 1;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#skillbox2 {
+    flex: 2;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#TechGrid:last-child {
+    padding-bottom: 5vh;
+}
+
+#TechGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#skillbox3 {
+    border-right: 1px solid gray;
+}
+
+#skillbox1 p,
+#skillbox2 p,
+#skillbox3 p {
+    margin-left: 2vw;
+}
+
+.SkillTitle {
+    color: red;
+}
+
+/*Projects */
+
+#Projects hr {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#Projects .topRows {
+    margin-bottom: 0vh;
+}
+#FavP {
+    font-size: large;
+    margin-left: 12vw;
+}
+
+#ProjectBox {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#HeavyWake,
+#GymTracker,
+#CurrentProject {
+    width: 80vw;
+    display: flex;
+    margin-left: 10vw;
+}
+
+.ProjectDate,
+.MainProject,
+.TechStack {
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#CurrentProject .ProjectDate, #CurrentProject .MainProject, #CurrentProject .TechStack {
+    border-bottom: none;
+    border-left: 1px solid gray;
+}
+
+.MainProject h1 {
+    margin-left: 2vw;
+}
+
+.ProjectDate {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MainProject {
+    flex: 6;
+}
+.TechStack h1 {
+    margin: 0;
+    margin-top: 2vh;
+}
+.TechStack {
+    flex: 3;
+}
+.TechStack > div {
+    margin-left: 2vw;
+}
+.ProjectDate p {
+    margin-top: 2vw;
+}
+
+#Projects h1 {
+    font-size: large;
+}
+
+
+
+
+
+/*About Me*/
+#AboutMe .topRows {
+    margin-bottom: 5vh;
+}
+
+#AboutMe hr {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#AboutMain {
+    margin-left: 10vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#AboutMain h1 {
+    margin-left: 3vw;
+}
+
+#AboutMain h2 {
+    margin-left: 3vw;
+}
+
+#Hobbies,
+#Contact {
+    flex: 1;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#Hobbies p,
+#Contact p {
+    margin-left: 3vw;
+}
+
+#AboutMain h1 {
+    margin-bottom: 3vw;
+}
+
+#Contact {
+    border-right: 1px solid gray;
+}
+
+
+
+/*Footer*/
+#footer hr {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#footer .topRows {
+    margin-bottom: 0;
+}
+
+#Imp {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+#footer {
+    margin-top: 10vh;
+    background-color: black;
+    color: white;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#footer a {
+    margin-left: 15vw;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+}
+
+#footer p {
+    margin-left: 40vw;
+    color: gray;
 }

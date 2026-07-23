@@ -34,7 +34,6 @@
                 <a href="#Skills">Skills</a>
                 <a href="#Projects">Projects</a>
                 <a href="#AboutMe">About Me</a>
-                <a href="#footer">Impressum</a>
             </nav>
             <div class="socials">
                 <div>
@@ -53,7 +52,7 @@
         <div class="topRows">
             <p>01</p>
             <hr>
-            <p id="EducationTitle">Education</p>
+            <p class="SectionTitles">Education</p>
         </div>
         <div class="edu">
             <div>
@@ -65,7 +64,8 @@
             <div>
                 <p>2024-2027</p>
                 <h1>B.Sc. Media Technology and Design</h1>
-                <a href="https://fh-ooe.at/campus-hagenberg" target="_blank">University of Applied Sciences Upper Austria — FH Hagenberg</a>
+                <a href="https://fh-ooe.at/campus-hagenberg" target="_blank">University of Applied Sciences Upper
+                    Austria — FH Hagenberg</a>
             </div>
         </div>
         <hr>
@@ -74,19 +74,124 @@
         <div class="topRows">
             <p>02</p>
             <hr>
-            <p id="SkillsTitle">Skills</p>
+            <p class="SectionTitles">Skills & Technologies</p>
+        </div>
+        <div id="SkillList">
+            <div id="skillbox1">
+                <p class="SkillTitle">Programming Languages</p>
+                <p>Java</p>
+                <p>C#</p>
+                <p>Python</p>
+            </div>
+            <div id="skillbox2">
+                <p class="SkillTitle">Technologies and Tools</p>
+                <div id="TechGrid">
+                    <p>Git</p>
+                    <p>Unity</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Figma</p>
+                    <p>ChatGPT/Codex</p>
+                    <p>Docker</p>
+                    <p>SQL</p>
+                    <p>JavaFX</p>
+                </div>
+            </div>
+            <div id="skillbox3">
+                <p class="SkillTitle">Spoken Languages</p>
+                <p>German</p>
+                <p>English</p>
+            </div>
         </div>
     </section>
     <section id="Projects">
-        <h2>Projects</h2>
-        <p>I have worked on various projects throughout my studies, including software development, game design, and
-            backend-focused applications. I enjoy creating innovative solutions and exploring new technologies.</p>
+        <div class="topRows">
+            <p>03</p>
+            <hr>
+            <p class="SectionTitles">Projects</p>
+        </div>
+        <h1 id="FavP">Here are some of my favourite Projects</h1>
+        <div id="ProjectBox">
+
+            <div id="HeavyWake">
+                <div class="ProjectDate">
+                    <p>2025 - 2026</p>
+                </div>
+                <div class="MainProject">
+                    <h1>Heavy Wake</h1>
+                    <p>Heavy Wake is a Unity based Deckbuilding RPG created as a Teamproject over 2 Semesters. We had
+                        the chance
+                        to showcase our Game for our University at the A1 Spielefestival 2026 at the Vienna Austria
+                        Center. </p>
+                    <a>More about Heavy Wake</a>
+                </div>
+                <div class="TechStack">
+                    <h1>Tech Stack</h1>
+                    <p>C#, Unity, Ink-Unity</p>
+                </div>
+            </div>
+            <div id="GymTracker">
+                <div class="ProjectDate">
+                    <p>June/July 2026</p>
+                </div>
+                <div class="MainProject">
+                    <h1>GymTracker</h1>
+                    <p>GymTracker is a JavaFX based App where the User can insert his Progress to calculate his
+                        OneRepMax and Check his Progress over Time. </p>
+                    <a>More about GymTracker</a>
+                </div>
+                <div class="TechStack">
+                    <div>
+                        <h1>Tech Stack</h1>
+                        <p>Java, JavaFX, Maven</p>
+                    </div>
+                </div>
+            </div>
+            <div id="CurrentProject">
+                <div class="ProjectDate">
+                    <p>July 2026 -</p>
+                </div>
+                <div class="MainProject">
+                    <h1>CurrentProject - Goblin Employer</h1>
+                    <p>Now Im working on a 2D idle Game where you build your empire as a weapon merchant forcing Goblins
+                        to work in your factories. </p>
+                    <a>More about this Game</a>
+                </div>
+                <div class="TechStack">
+                    <h1>Tech Stack</h1>
+                    <p>C#, Unity</p>
+                </div>
+            </div>
+        </div>
     </section>
+
     <section id="AboutMe">
-        <h2>About Me</h2>
-        <p>Hi, my name is Paul Bankl and I am a Media Technology student at the University of Applied Sciences in
-            Salzburg. I have a passion for software development, game design, and backend-focused projects. I enjoy
-            creating innovative solutions and exploring new technologies.</p>
+        <div class="topRows">
+            <p>04</p>
+            <hr>
+            <p class="SectionTitles">About me</p>
+        </div>
+        <div id="AboutMain">
+            <div id="Hobbies">
+                <h1>Hobbies</h1>
+                <h2>Weightlifting</h2>
+                <p>Trying to get my Squat up</p>
+                <h2>Video Games</h2>
+                <p>Valorant, League of Legends,...</p>
+                <h2>Chess</h2>
+                <p>Pretty bad tho</p>
+                <h2>Coding</h2>
+                <p>Trying to learn new things</p>
+            </div>
+            <div id="Contact">
+                <h1>Contact</h1>
+                <p>Paul Bankl</p>
+                <p>Parkstraße 10</p>
+                <p>4300 St.Valentin</p>
+                <p>Austria</p>
+                <p>paul.n.bankl@gmail.com</p>
+            </div>
+        </div>
     </section>
 
 
@@ -94,8 +199,8 @@
 
 
     <footer id="footer">
-        <p>Copyright © 2026 Paul Bankl</p>
-
+        <a href="#IntroArea">Paul Bankl</a>
+        <p>2026 - All rights reserved</p>
     </footer>
     <script>
         const navbar = document.querySelector(".navbar");
