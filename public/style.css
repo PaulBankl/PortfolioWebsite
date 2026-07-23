@@ -52,11 +52,11 @@ body {
     margin-bottom: 0;
 }
 
-#leftsideIntro h1 {
+#Name {
     color: white;
     margin-top: 0vh;
     margin-left: 3vw;
-    font-family: "Barlow Condensed", Arial, sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     font-size: 8rem;
     font-weight: 900;
     line-height: .9;
@@ -255,9 +255,12 @@ hr {
 }
 
 #TechGrid {
+    margin-top: 2vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    row-gap: .7rem;
 }
+
 
 #skillbox3 {
     border-right: 1px solid gray;
@@ -266,11 +269,23 @@ hr {
 #skillbox1 p,
 #skillbox2 p,
 #skillbox3 p {
+    margin: 0;
     margin-left: 2vw;
+    line-height: 1;
 }
 
 .SkillTitle {
-    color: red;
+    color: black;
+    font-family: "JetBrains Mono", monospace;
+    padding-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+.SkGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: .7rem;
+    margin-top: 2vh;
 }
 
 /*Projects */
