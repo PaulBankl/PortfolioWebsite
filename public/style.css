@@ -101,6 +101,8 @@ body {
     text-decoration: none;
     color: white;
     text-shadow: 0px 0px 5px black;
+    font-family: "JetBrains Mono", monospace;
+
 }
 
 .navbar.scrolled {
@@ -293,7 +295,7 @@ hr {
     border-left: 1px solid gray;
 }
 
-.MainProject h1 {
+.MainProject h1, .ProjectDescription {
     margin-left: 2vw;
 }
 
@@ -306,6 +308,8 @@ hr {
 
 .MainProject {
     flex: 6;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 .TechStack h1 {
     margin: 0;
@@ -325,7 +329,16 @@ hr {
     font-size: large;
 }
 
-
+#MoreProjects {
+    display:block;
+    width: 15vw;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    margin-top: 5vh;
+    margin-left: 10vw;
+}
 
 
 
