@@ -125,9 +125,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
-    width: 38vw;
+    width: 40vw;
     height: auto;
-    margin-top: 70vh;
+    margin-top: 65vh;
     margin-left: 7vw;
 
 }
@@ -136,14 +136,16 @@ body {
 .socials p {
     color: white;
     text-decoration: none;
-    text-shadow: 0px 0px 5px black;
     font-size: 2rem;
     margin: 0;
     margin-bottom: 1rem;
+    font-family: "JetBrains Mono", monospace;
 }
 
 .socials a {
     display: block;
+    font-size: 2rem;
+    font-family: "Jost", sans-serif;
 }
 
 hr {
@@ -168,6 +170,9 @@ hr {
     margin-bottom: 5vw;
     gap: 1rem;
     white-space: nowrap;
+}
+.topRows p {
+    font-family: "Barlow Condensed", Arial, sans-serif;
 }
 
 .edu {
