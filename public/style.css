@@ -41,6 +41,7 @@ body {
     font-family: "Barlow Condensed", Arial, sans-serif;
     font-weight: 300;
     letter-spacing: 0.05em;
+    font-size: 1.3rem;
 }
 
 #leftsideIntro hr {
@@ -172,7 +173,7 @@ hr {
     white-space: nowrap;
 }
 .topRows p {
-    font-family: "Barlow Condensed", Arial, sans-serif;
+    font-family: "JetBrains Mono", monospace;
 }
 
 .edu {
@@ -182,6 +183,19 @@ hr {
     flex-direction: row;
     gap: 3rem;
     margin-bottom: 15vh;
+}
+.edu h1{
+    font-family: "Barlow Condensed", sans-serif;
+}
+.edu p, .edu a {
+   font-family: "Barlow Condensed", sans-serif;
+    
+    
+}
+.eduDate{
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 300;
+    letter-spacing: 0.05em;
 }
 
 .edu a {
