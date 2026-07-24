@@ -181,12 +181,13 @@ hr {
 }
 
 .edu {
-    margin-left: 33vw;
+    width: 80vw;
+    margin: 0 auto 15vh;
     color: black;
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    margin-bottom: 15vh;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: start;
+    column-gap: 3rem;
 }
 .edu h1{
     font-family: "Barlow Condensed", sans-serif;
@@ -207,11 +208,23 @@ hr {
     display: block;
 }
 
+.edu > div:first-child {
+    justify-self: end;
+    width: min(100%, 20rem);
+}
+
+.edu > div:last-child {
+    justify-self: start;
+    width: min(100%, 28rem);
+}
+
 .vertical-line {
-    margin-top: -2vh;
+    justify-self: center;
+    align-self: stretch;
     width: 1px;
     background-color: gray;
-    height: 20vh;
+    height: 100%;
+    min-height: 20vh;
 }
 
 #Education hr {
@@ -556,6 +569,11 @@ hr {
 
 /* Intro Section*/
 .navrow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
     width: 100vw;
     height: 6vh;
     border-bottom: 1px solid gray;
@@ -563,15 +581,16 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
 }
 .navrow a {
     text-decoration: none;
-    color: gray;
+    color: white;
     margin-right: 10vw;
 }
 .navrow #PB {
     margin-left: 10vw;
-    color: black;
+    color: white;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
@@ -579,6 +598,7 @@ hr {
 #ProjectsIntro {
     height: 55vh;
     border-bottom: 1px solid gray;
+    background-color: white;
 }
 #ProjectsIntro h1 {
     margin-left: 10vw;
@@ -586,6 +606,7 @@ hr {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 1000;
     font-size: 7rem;
+    color: black;
 }
 #ProjectsIntro p {
     margin-left: 10vw;
@@ -626,14 +647,13 @@ hr {
     color: gray;
 }
 .PrStack {
-    margin-top: 2vh;
+    margin-top: 0;
     display: flex;
     flex-direction: column;
 }
 
 .PrStack h1 {
     margin: 0;
-    margin-top: 1vh;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
     font-size: 1rem;
@@ -687,9 +707,8 @@ hr {
     border: none;
 }
 .project-video-wrapper {
-    margin-left: 10vw;
-    margin-top: 5vh;
-    margin-bottom: 2vh;
+    width: min(80vw, 900px);
+    margin: 5vh auto 2vh;
 }
 .project-video-wrapper p, a {
     margin-top: 1vh;
@@ -722,6 +741,7 @@ hr {
     margin-top: 2vh;
 }
 #ESDesc {
+    display: none;
     margin-left: 10vw;
     font-family: "Jost", sans-serif;
     font-weight: 300;
@@ -815,103 +835,482 @@ hr {
     color: black;
 }
 
-
-/*responsive design for smaller screens */
-
-/* Desktop default: 1440px+ */
-/* dein normales CSS */
-
-
-/* kleiner Desktop / Laptop */
-@media (max-width: 1200px) {
-  
-
-.navbar a {
-    margin-left: 3vw;
-    text-decoration: none;
-    color: white;
-    text-shadow: 2px 2px 5px black;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 0.9rem;
-}
-.socials {
-    display: grid;
-    background-color: rgba(0, 0, 0, .6);
-    border-left: 10px solid black;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 40vw;
-    height: auto;
-    margin-top: 65vh;
-    margin-left: 2vw;
+@media (min-width: 1000px) {
+    .project-video-wrapper {
+        width: 80vw;
+        margin: 5vh 10vw 2vh;
+    }
 }
 
-.socials a,
-.socials p {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    margin: 0;
-    margin-bottom: 1rem;
-    font-family: "JetBrains Mono", monospace;
-}
 
-.socials a {
-    display: block;
-    font-size: 1rem;
-    font-family: "Jost", sans-serif;
-}
+/* Responsive adjustments for screens below the finished desktop layout */
 
-.edu {
-    width: 100vw;
-    color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
-    margin-bottom: 15vh;
-}
-.edu h1{
-    font-family: "Barlow Condensed", sans-serif;
-}
-.edu p, .edu a {
-   font-family: "Jost", sans-serif;
-    color: gray;
-    
-}
-.eduDate{
-    font-family: "JetBrains Mono", monospace;
-    font-weight: 300;
-    letter-spacing: 0.05em;
-}
+/* Smaller desktop / laptop */
+@media (max-width: 1439px) {
+    #IntroArea {
+        min-height: 100vh;
+        height: auto;
+    }
 
-.edu a {
-    text-decoration: none;
-    display: block;
-}
+    #leftsideIntro,
+    #rightsideIntro,
+    .edu > div,
+    .MainProject,
+    .TechStack,
+    .Overview,
+    .MyP,
+    #Hobbies,
+    #Contact {
+        min-width: 0;
+    }
 
-.vertical-line {
-    margin-top: -2vh;
-    width: 1px;
-    background-color: gray;
-    height: 20vh;
-}
-}
+    #Name {
+        font-size: clamp(6rem, 8vw, 8rem);
+    }
 
+    .navbar {
+        width: 50vw;
+        justify-content: space-between;
+        padding: 0 2vw;
+        gap: 0.75rem;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        font-size: clamp(0.72rem, 0.9vw, 0.9rem);
+    }
+
+    .socials {
+        width: min(40vw, 34rem);
+        margin-left: auto;
+        margin-right: 3vw;
+        grid-template-columns: minmax(0, auto) minmax(0, 1fr);
+    }
+
+    .socials a,
+    .socials p {
+        font-size: clamp(1rem, 1.35vw, 1.6rem);
+    }
+
+    #Education {
+        height: auto;
+    }
+
+    .edu {
+        width: 80vw;
+        margin: 0 auto 12vh;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .vertical-line {
+        flex: 0 0 1px;
+        align-self: stretch;
+        height: auto;
+        margin-top: 0;
+    }
+
+    #ProjectBox {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    #HeavyWake,
+    #GymTracker,
+    #CurrentProject {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #MoreProjects {
+        width: clamp(13rem, 20vw, 16rem);
+    }
+
+    .PrInfo,
+    .PrDesc,
+    .GTPics,
+    #HWSteam,
+    .project-video-wrapper {
+        min-width: 0;
+    }
+
+    #HWSteam {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    }
+
+    .GTPics img {
+        width: 100%;
+        height: auto;
+    }
+
+    img,
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    .socials a,
+    .edu a,
+    #GHLink a,
+    #HWSteam p,
+    #Contact p,
+    .navrow a {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+}
 
 /* Tablet */
 @media (max-width: 900px) {
-    /* Layout stärker vereinfachen */
+    #IntroArea {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    #leftsideIntro,
+    #rightsideIntro {
+        width: 100%;
+        flex: none;
+    }
+
+    #leftsideIntro {
+        padding-top: 5.5rem;
+        padding-bottom: 2rem;
+    }
+
+    #p1 {
+        margin-top: 12vh;
+    }
+
+    #Name {
+        font-size: clamp(4.75rem, 12vw, 6rem);
+    }
+
+    #leftBar a {
+        position: static;
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 0 5vw;
+        color: white;
+    }
+
+    #leftBar.scrolled a {
+        background-color: transparent;
+        border-bottom: none;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        top: 0;
+        left: 0;
+        padding: 0.85rem 5vw;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.75rem 1rem;
+        z-index: 10;
+    }
+
+    .navbar a {
+        font-size: 0.82rem;
+    }
+
+    #rightsideIntro {
+        min-height: 70vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 5rem 0 2rem;
+    }
+
+    .socials {
+        width: min(88vw, 34rem);
+        margin: 0 auto;
+    }
+
+    .edu {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    #HeavyWake,
+    #GymTracker,
+    #CurrentProject,
+    #AboutMain,
+    .PrDesc {
+        flex-direction: column;
+    }
+
+    .ProjectDate {
+        justify-content: flex-start;
+        padding: 1rem 0 0 2vw;
+    }
+
+    .MainProject,
+    .TechStack {
+        padding-right: 2vw;
+    }
+
+    #CurrentProject .ProjectDate,
+    #CurrentProject .MainProject {
+        border-bottom: 1px solid gray;
+    }
+
+    #CurrentProject .TechStack {
+        border-bottom: none;
+    }
+
+    #Hobbies {
+        border-right: 1px solid gray;
+        border-bottom: none;
+    }
+
+    #Contact {
+        border-top: none;
+    }
+
+    .PrInfo {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    #HWSteam {
+        grid-template-columns: 1fr;
+    }
+
+    #ProjectsIntro {
+        height: auto;
+        padding-bottom: 4rem;
+    }
+
+    #ProjectsIntro p {
+        margin-top: 12vh;
+    }
+
+    #ProjectsIntro h1 {
+        font-size: clamp(4.5rem, 16vw, 6rem);
+    }
+
+    .PR-Title {
+        font-size: clamp(3.5rem, 11vw, 4.5rem);
+    }
 }
 
+@media (max-width: 800px) {
+    #leftBar a {
+        display: none;
+    }
 
-/* Handy */
+    #rightsideIntro {
+        background-position: 50% 22%;
+    }
+}
+
+/* Phone */
 @media (max-width: 600px) {
-    /* einspaltig, kleinere Schrift */
+    #p1,
+    #Name,
+    #p2,
+    #leftsideIntro hr {
+        margin-left: 5vw;
+    }
+
+    #p1 {
+        margin-top: 8rem;
+    }
+
+    #Name {
+        font-size: clamp(3.75rem, 15vw, 5rem);
+    }
+
+    #p2 {
+        font-size: 1.1rem;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+        gap: 0.5rem 0.75rem;
+        padding: 0.75rem 5vw;
+    }
+
+    .navbar a {
+        font-size: 0.76rem;
+    }
+
+    .socials {
+        width: 90vw;
+        grid-template-columns: 1fr;
+        border-left-width: 8px;
+    }
+
+    .socials a,
+    .socials p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .topRows {
+        flex-wrap: wrap;
+        white-space: normal;
+        gap: 0.5rem 0.75rem;
+        margin-bottom: 2rem;
+    }
+
+    .topRows hr {
+        width: 100%;
+        margin: 0;
+        flex-basis: 100%;
+    }
+
+    #SkillList {
+        flex-direction: column;
+    }
+
+    #skillbox1,
+    #skillbox2,
+    #skillbox3 {
+        border-right: 1px solid gray;
+    }
+
+    #skillbox2,
+    #skillbox3 {
+        border-top: none;
+    }
+
+    #TechGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #MoreProjects {
+        width: 80vw;
+    }
+
+    #AboutMain h1,
+    #AboutMain h2,
+    #Hobbies p,
+    #Contact p,
+    .MainProject h1,
+    .ProjectDescription,
+    .TechStack > div {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    .vertical-line {
+        display: block;
+        width: 100%;
+        height: 1px;
+        min-height: 0;
+        margin: 0;
+    }
+
+    .ProjectDate,
+    .MainProject,
+    .TechStack {
+        width: 100%;
+        border-right: 1px solid gray;
+    }
+
+    .ProjectDate {
+        margin: 0;
+        padding: 1rem 4vw 0;
+    }
+
+    .ProjectDate p {
+        margin: 0;
+    }
+
+    .MainProject,
+    .TechStack {
+        padding-right: 0;
+    }
+
+    .GTPics {
+        flex-direction: column;
+    }
+
+    .PrInfo {
+        gap: 0.75rem;
+    }
+
+    #ProjectsIntro p {
+        margin-top: 10vh;
+    }
+
+    #ProjectsIntro h1 {
+        font-size: clamp(3.5rem, 18vw, 4.5rem);
+    }
+
+    .PR-Title {
+        font-size: clamp(2.75rem, 12vw, 3.5rem);
+    }
+
+    #footer {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1.5rem 10vw;
+    }
+
+    #footer a,
+    #footer p {
+        margin: 0;
+    }
 }
 
-
-/* kleines Handy */
+/* Very small phone */
 @media (max-width: 400px) {
-    /* Notfall-Fixes */
+    #p1 {
+        margin-top: 6.5rem;
+    }
+
+    #Name {
+        font-size: clamp(3rem, 16vw, 4rem);
+    }
+
+    #p2 {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        padding: 0.75rem 4vw;
+    }
+
+    .navbar a {
+        font-size: 0.72rem;
+    }
+
+    .socials {
+        width: 92vw;
+    }
+
+    .socials a,
+    .socials p {
+        font-size: 0.92rem;
+    }
+
+    #TechGrid {
+        grid-template-columns: 1fr;
+    }
+
+    #ProjectsIntro h1 {
+        font-size: 3rem;
+    }
+
+    .PR-Title {
+        font-size: 2.3rem;
+    }
 }
