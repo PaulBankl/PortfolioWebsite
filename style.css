@@ -688,7 +688,15 @@ hr {
 #HWSteam {
     margin-left: 10vw;
     display: grid;
+    width: 70vw;
+    gap: 2rem;
     grid-template-columns: 1fr 2fr;
+}
+#HWSteam img {
+    width: 50vw;
+    height: 350px;
+    object-fit: cover;
+    border: 1px solid gray;
 }
 #GEST {
     font-family: "Barlow Condensed", sans-serif;
@@ -698,6 +706,13 @@ hr {
     margin-left: 10vw;
     margin-bottom: 0vh;
     margin-top: 2vh;
+}
+#ESDesc {
+    margin-left: 10vw;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    color: black;
 }
 #GHLink a, p {
     font-family: "Jost", sans-serif;
