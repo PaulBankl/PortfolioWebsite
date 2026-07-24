@@ -613,6 +613,7 @@ hr {
     color: gray;
 }
 .PrStack {
+    margin-top: 2vh;
     display: flex;
     flex-direction: column;
 }
@@ -630,12 +631,12 @@ hr {
     font-family: "JetBrains Mono", monospace;
     font-weight: 300;
     font-size: 1rem;
-    line-height: 1;
+    line-height: 1.5;
     color: black;
 } 
 .PR-Title {
     margin-left: 10vw;
-    margin-top: 5vh;
+    margin-top: 0vh;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 900;
     font-size: 5rem;
@@ -677,10 +678,31 @@ hr {
     margin-top: 5vh;
     margin-bottom: 2vh;
 }
-.project-video-wrapper p {
+.project-video-wrapper p, a {
     margin-top: 1vh;
     font-family: "Jost", sans-serif;
     font-weight: 300;
+    color: black;
+}
+
+#HWSteam {
+    margin-left: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#GEST {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: black;
+    margin-left: 10vw;
+    margin-bottom: 0vh;
+    margin-top: 2vh;
+}
+#GHLink a, p {
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
     color: black;
 }
 
@@ -693,6 +715,39 @@ hr {
     margin-top: 10vh;
 }
 
+.GTPics {
+    display: flex;
+    gap: 2rem;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.GTPics img {
+    width: 50%;
+    height: 350px;
+    object-fit: cover;
+    border: 1px solid gray;
+}
+#GHLink {
+    margin-left: 10vw;
+    margin-top: 2vh;
+}
+#GHLink h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: black;
+}
+#GHLink a, p {
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    color: black;
+    text-decoration: none;
+}
+#GHLink a:hover {
+    text-decoration: underline;
+}
 
 
 
