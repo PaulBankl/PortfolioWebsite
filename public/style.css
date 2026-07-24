@@ -517,12 +517,13 @@ hr {
     height: 15vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
 }
 
 
 #footer a {
-    margin-left: 15vw;
+    margin-left: 10vw;
     font-size: x-large;
     text-decoration: none;
     color: white;
@@ -532,7 +533,7 @@ hr {
 }
 
 #footer p {
-    margin-left: 40vw;
+    margin-right: 10vw;
     color: gray;
     font-family: "JetBrains Mono", monospace;
 }
@@ -586,7 +587,12 @@ hr {
 /* Heavy Wake Project */
 
 #HW-Project {
-    height: 100vh;
+    height: auto;
+}
+#HW-Project hr {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 10vh;
 }
 .PrInfo {
     display: flex;
@@ -681,8 +687,10 @@ hr {
 
 
 /* GymTracker Project */
-#GT-Project {
-    background-color: red;
+#GT-Project hr {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 10vh;
 }
 
 
@@ -690,6 +698,34 @@ hr {
 
 
 /* Goblin Employer Project */
-#GE-Project {
-    background-color: blue;
+#GE-Project hr {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+
+
+
+
+/* More Coming Soon Section */
+#MoreComing hr {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+#MoreComing h1 {
+    margin-left: 10vw;
+    margin-top: 5vh;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: darkgray;
+}
+#MoreComing p {
+    margin-left: 10vw;
+    margin-top: 1vh;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    color: black;
 }
