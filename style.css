@@ -85,7 +85,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     position: fixed;
@@ -101,7 +101,7 @@ body {
     margin-left: 5vw;
     text-decoration: none;
     color: white;
-    text-shadow: 0px 0px 5px black;
+    text-shadow: 2px 2px 5px black;
     font-family: "JetBrains Mono", monospace;
 
 }
@@ -124,6 +124,8 @@ body {
 
 .socials {
     display: grid;
+    background-color: rgba(0, 0, 0, .6);
+    border-left: 10px solid black;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
     width: 40vw;
@@ -277,8 +279,10 @@ hr {
 .SkillTitle {
     color: black;
     font-family: "Barlow Condensed", sans-serif;
+    font-weight: bold;
     padding-top: 3vh;
     margin-bottom: 5vh;
+    font-size: 1.2rem;
 }
 
 .SkGrid {
@@ -348,8 +352,9 @@ hr {
 .ProjectDate {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .MainProject {
@@ -381,7 +386,6 @@ hr {
     margin-left: 2vw;
 }
 .ProjectDate p {
-    margin-top: 2vw;
     font-family: "JetBrains Mono", monospace;
     font-weight: 300;
     font-size: small;
@@ -479,6 +483,9 @@ hr {
     font-family: "Jost", sans-serif;
     font-weight: 300;
     line-height: 1.5;
+}
+#Hobbies p:last-child {
+    margin-bottom: 3vh;
 }
 #Contact p {
     margin-left: 3vw;
