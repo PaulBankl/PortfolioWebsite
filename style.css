@@ -8,6 +8,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* Intro Area */
@@ -522,6 +523,7 @@ hr {
 }
 
 #footer {
+    width: 100vw;
     margin-top: 10vh;
     background-color: black;
     color: white;
@@ -698,14 +700,15 @@ hr {
 
 #HWSteam {
     margin-left: 10vw;
+    margin-right: 10vw;
     display: grid;
-    width: 70vw;
+    width: auto;
     gap: 2rem;
     grid-template-columns: 1fr 2fr;
 }
 #HWSteam img {
-    width: 50vw;
-    height: 350px;
+    width: 100%;
+    max-width: 100%;
     object-fit: cover;
     border: 1px solid gray;
 }
@@ -749,8 +752,9 @@ hr {
 }
 
 .GTPics img {
-    width: 50%;
-    height: 350px;
+    flex: 1;
+    min-width: 0;
+    width: auto;
     object-fit: cover;
     border: 1px solid gray;
 }
@@ -809,4 +813,105 @@ hr {
     font-weight: 300;
     line-height: 1.5;
     color: black;
+}
+
+
+/*responsive design for smaller screens */
+
+/* Desktop default: 1440px+ */
+/* dein normales CSS */
+
+
+/* kleiner Desktop / Laptop */
+@media (max-width: 1200px) {
+  
+
+.navbar a {
+    margin-left: 3vw;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.9rem;
+}
+.socials {
+    display: grid;
+    background-color: rgba(0, 0, 0, .6);
+    border-left: 10px solid black;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 40vw;
+    height: auto;
+    margin-top: 65vh;
+    margin-left: 2vw;
+}
+
+.socials a,
+.socials p {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.socials a {
+    display: block;
+    font-size: 1rem;
+    font-family: "Jost", sans-serif;
+}
+
+.edu {
+    width: 100vw;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 15vh;
+}
+.edu h1{
+    font-family: "Barlow Condensed", sans-serif;
+}
+.edu p, .edu a {
+   font-family: "Jost", sans-serif;
+    color: gray;
+    
+}
+.eduDate{
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.edu a {
+    text-decoration: none;
+    display: block;
+}
+
+.vertical-line {
+    margin-top: -2vh;
+    width: 1px;
+    background-color: gray;
+    height: 20vh;
+}
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+    /* Layout stärker vereinfachen */
+}
+
+
+/* Handy */
+@media (max-width: 600px) {
+    /* einspaltig, kleinere Schrift */
+}
+
+
+/* kleines Handy */
+@media (max-width: 400px) {
+    /* Notfall-Fixes */
 }
