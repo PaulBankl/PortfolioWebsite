@@ -501,6 +501,10 @@ hr {
 #Hobbies p:last-child {
     margin-bottom: 3vh;
 }
+#Contact a {
+    text-decoration: none;
+    color: black;
+}
 #Contact p {
     margin-left: 3vw;
     font-family: "Jost", sans-serif;
