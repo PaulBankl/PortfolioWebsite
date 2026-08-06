@@ -759,7 +759,7 @@ hr {
     line-height: 1.5;
     color: black;
 }
-#GHLink a, p {
+.GHLink a, p {
     font-family: "Jost", sans-serif;
     font-weight: 300;
     line-height: 1.5;
@@ -789,24 +789,24 @@ hr {
     object-fit: cover;
     border: 1px solid gray;
 }
-#GHLink {
+.GHLink {
     margin-left: 10vw;
     margin-top: 2vh;
 }
-#GHLink h1 {
+.GHLink h1 {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
     color: black;
 }
-#GHLink a, p {
+.GHLink a, p {
     font-family: "Jost", sans-serif;
     font-weight: 300;
     line-height: 1.5;
     color: black;
     text-decoration: none;
 }
-#GHLink a:hover {
+.GHLink a:hover {
     text-decoration: underline;
 }
 
@@ -965,7 +965,7 @@ hr {
 
     .socials a,
     .edu a,
-    #GHLink a,
+    .GHLink a,
     #HWSteam p,
     #Contact p,
     .navrow a {
