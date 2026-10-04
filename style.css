@@ -175,6 +175,7 @@ hr {
     gap: 1rem;
     white-space: nowrap;
 }
+
 .topRows p {
     font-family: "JetBrains Mono", monospace;
     color: gray;
@@ -189,15 +190,19 @@ hr {
     align-items: start;
     column-gap: 3rem;
 }
-.edu h1{
+
+.edu h1 {
     font-family: "Barlow Condensed", sans-serif;
 }
-.edu p, .edu a {
-   font-family: "Jost", sans-serif;
+
+.edu p,
+.edu a {
+    font-family: "Jost", sans-serif;
     color: gray;
-    
+
 }
-.eduDate{
+
+.eduDate {
     font-family: "JetBrains Mono", monospace;
     font-weight: 300;
     letter-spacing: 0.05em;
@@ -208,12 +213,12 @@ hr {
     display: block;
 }
 
-.edu > div:first-child {
+.edu>div:first-child {
     justify-self: end;
     width: min(100%, 20rem);
 }
 
-.edu > div:last-child {
+.edu>div:last-child {
     justify-self: start;
     width: min(100%, 28rem);
 }
@@ -305,10 +310,12 @@ hr {
     row-gap: .7rem;
     margin-top: 2vh;
 }
+
 #SkillList p {
     font-family: "JetBrains Mono", monospace;
     font-weight: 300;
 }
+
 /*Projects */
 
 #Projects hr {
@@ -319,6 +326,7 @@ hr {
 #Projects .topRows {
     margin-bottom: 0vh;
 }
+
 #FavP {
     font-size: medium;
     font-weight: 100;
@@ -347,14 +355,18 @@ hr {
     border-left: 1px solid gray;
 }
 
-#CurrentProject .ProjectDate, #CurrentProject .MainProject, #CurrentProject .TechStack {
+#CurrentProject .ProjectDate,
+#CurrentProject .MainProject,
+#CurrentProject .TechStack {
     border-bottom: none;
     border-left: 1px solid gray;
 }
 
-.MainProject h1, .ProjectDescription {
+.MainProject h1,
+.ProjectDescription {
     margin-left: 2vw;
 }
+
 .ProjectDescription {
     margin-left: 2vw;
     margin-top: 1vh;
@@ -376,29 +388,35 @@ hr {
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
+
 .TechStack h1 {
     margin: 0;
     margin-top: 3vh;
-    font-family: "Barlow Condensed", sans-serif;    
+    font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
 }
+
 .TechStack p {
     margin-top: 1vh;
     line-height: 1.5;
     font-family: "JetBrains Mono", monospace;
     font-weight: 300;
 }
+
 .TechStack {
     flex: 3;
 }
+
 .MainProject h1 {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 700;
-    
+
 }
-.TechStack > div {
+
+.TechStack>div {
     margin-left: 2vw;
 }
+
 .ProjectDate p {
     font-family: "JetBrains Mono", monospace;
     font-weight: 300;
@@ -410,7 +428,7 @@ hr {
 }
 
 #MoreProjects {
-    display:block;
+    display: block;
     width: 15vw;
     text-align: center;
     background-color: black;
@@ -419,15 +437,18 @@ hr {
     margin-top: 5vh;
     margin-left: 10vw;
 }
+
 #MoreProjects:hover {
     background-color: white;
     color: black;
     transition: 0.3s;
 }
+
 #MoreProjects:hover p {
     color: black;
     transition: 0.3s;
 }
+
 #MoreProjects p {
     color: white;
     font-family: "Barlow Condensed", sans-serif;
@@ -481,31 +502,38 @@ hr {
 #Contact {
     border-right: 1px solid gray;
 }
-#Hobbies h1, #Contact h1 {
+
+#Hobbies h1,
+#Contact h1 {
     margin-top: 3vh;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 700;
     margin-bottom: 3vh;
 }
+
 #Hobbies h2 {
     margin-left: 3vw;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
     font-size: large;
 }
+
 #Hobbies p {
     margin-left: 3vw;
     font-family: "Jost", sans-serif;
     font-weight: 300;
     line-height: 1.5;
 }
+
 #Hobbies p:last-child {
     margin-bottom: 3vh;
 }
+
 #Contact a {
     text-decoration: none;
     color: black;
 }
+
 #Contact p {
     margin-left: 3vw;
     font-family: "Jost", sans-serif;
@@ -513,9 +541,10 @@ hr {
     line-height: 1.5;
     line-height: 1;
 }
+
 #Contact h2 {
     margin-left: 3vw;
-     font-family: "Jost", sans-serif;
+    font-family: "Jost", sans-serif;
     font-weight: 500;
     font-size: large;
     line-height: 1;
@@ -594,11 +623,13 @@ hr {
     align-items: center;
     background-color: black;
 }
+
 .navrow a {
     text-decoration: none;
     color: white;
     margin-right: 10vw;
 }
+
 .navrow #PB {
     margin-left: 10vw;
     color: white;
@@ -606,11 +637,13 @@ hr {
     font-weight: 700;
     font-size: 1.5rem;
 }
+
 #ProjectsIntro {
     height: 55vh;
     border-bottom: 1px solid gray;
     background-color: white;
 }
+
 #ProjectsIntro h1 {
     margin-left: 10vw;
     margin-top: 0vh;
@@ -619,6 +652,7 @@ hr {
     font-size: 7rem;
     color: black;
 }
+
 #ProjectsIntro p {
     margin-left: 10vw;
     margin-top: 20vh;
@@ -634,11 +668,13 @@ hr {
 #HW-Project {
     height: auto;
 }
+
 #HW-Project hr {
     width: 80vw;
     margin: 0 auto;
     margin-top: 10vh;
 }
+
 .PrInfo {
     display: flex;
     flex-direction: row;
@@ -649,6 +685,7 @@ hr {
     height: auto;
     margin-top: 5vh;
 }
+
 .PrDate {
     margin: 0;
     font-family: "JetBrains Mono", monospace;
@@ -657,6 +694,7 @@ hr {
     font-size: small;
     color: gray;
 }
+
 .PrStack {
     margin-top: 0;
     display: flex;
@@ -670,6 +708,7 @@ hr {
     font-size: 1rem;
     color: gray;
 }
+
 .PrStack p {
     margin: 0;
     font-family: "JetBrains Mono", monospace;
@@ -677,7 +716,8 @@ hr {
     font-size: 1rem;
     line-height: 1.5;
     color: black;
-} 
+}
+
 .PR-Title {
     margin-left: 10vw;
     margin-top: 0vh;
@@ -688,40 +728,62 @@ hr {
 }
 
 .PrDesc {
-   display: flex;
-   width: 80vw;
-   margin-left: 10vw;
+    display: flex;
+    width: 80vw;
+    margin-left: 10vw;
 }
+
+.PrDesc h2,
+.GHLink h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 1vh;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
 .Overview {
     flex: 1;
     margin-right: 2vw;
 }
-.MyP{
+
+.MyP {
     flex: 2;
 }
-.Overview h1, .MyP h1 {
+
+.Overview h1,
+.MyP h1 {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
     color: black;
 }
-.Overview p, .MyP p {
+
+.Overview p,
+.MyP p {
     font-family: "Jost", sans-serif;
     font-weight: 300;
     line-height: 1.5;
     color: black;
 }
+
 .youtube-video {
     width: 100%;
     max-width: 900px;
     aspect-ratio: 16 / 9;
     border: none;
 }
+
 .project-video-wrapper {
     width: min(80vw, 900px);
     margin: 5vh auto 2vh;
 }
-.project-video-wrapper p, a {
+
+.project-video-wrapper p,
+a {
     margin-top: 1vh;
     font-family: "Jost", sans-serif;
     font-weight: 300;
@@ -736,12 +798,14 @@ hr {
     gap: 2rem;
     grid-template-columns: 1fr 2fr;
 }
+
 #HWSteam img {
     width: 100%;
     max-width: 100%;
     object-fit: cover;
     border: 1px solid gray;
 }
+
 #GEST {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
@@ -751,6 +815,7 @@ hr {
     margin-bottom: 0vh;
     margin-top: 2vh;
 }
+
 #ESDesc {
     display: none;
     margin-left: 10vw;
@@ -759,7 +824,9 @@ hr {
     line-height: 1.5;
     color: black;
 }
-.GHLink a, p {
+
+.GHLink a,
+p {
     font-family: "Jost", sans-serif;
     font-weight: 300;
     line-height: 1.5;
@@ -789,23 +856,28 @@ hr {
     object-fit: cover;
     border: 1px solid gray;
 }
+
 .GHLink {
     margin-left: 10vw;
     margin-top: 2vh;
 }
+
 .GHLink h1 {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
     font-size: 1.2rem;
     color: black;
 }
-.GHLink a, p {
+
+.GHLink a,
+p {
     font-family: "Jost", sans-serif;
     font-weight: 300;
     line-height: 1.5;
     color: black;
     text-decoration: none;
 }
+
 .GHLink a:hover {
     text-decoration: underline;
 }
@@ -828,6 +900,7 @@ hr {
     margin: 0 auto;
     margin-top: 10vh;
 }
+
 #MoreComing h1 {
     margin-left: 10vw;
     margin-top: 5vh;
@@ -836,6 +909,7 @@ hr {
     font-size: 2rem;
     color: darkgray;
 }
+
 #MoreComing p {
     margin-left: 10vw;
     margin-top: 1vh;
@@ -864,7 +938,7 @@ hr {
 
     #leftsideIntro,
     #rightsideIntro,
-    .edu > div,
+    .edu>div,
     .MainProject,
     .TechStack,
     .Overview,
@@ -1129,6 +1203,7 @@ hr {
 
 /* Phone */
 @media (max-width: 600px) {
+
     #p1,
     #Name,
     #p2,
@@ -1212,7 +1287,7 @@ hr {
     #Contact p,
     .MainProject h1,
     .ProjectDescription,
-    .TechStack > div {
+    .TechStack>div {
         margin-left: 4vw;
         margin-right: 4vw;
     }
@@ -1224,6 +1299,7 @@ hr {
         min-height: 0;
         margin: 0;
     }
+
     .SkGrid p:last-child {
         padding-bottom: 1rem;
     }
@@ -1332,6 +1408,7 @@ hr {
         font-size: 2.3rem;
     }
 }
+
 /* Impressum */
 #Impressum {
     min-height: 100vh;
@@ -1369,7 +1446,7 @@ hr {
     letter-spacing: 0.03em;
 }
 
-#Impressum + main:empty {
+#Impressum+main:empty {
     display: none;
 }
 

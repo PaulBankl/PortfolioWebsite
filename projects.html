@@ -110,38 +110,57 @@
 
     <section id="GE-Project">
         <div class="PrInfo">
-            <p class="PrDate">July 2026 - In development</p>
+            <p class="PrDate">July 2026 - October 2026</p>
             <div class="PrStack">
                 <h1>TECH STACK</h1> <br>
-                <p>Java, Spring Boot, PostgreSQL, Maven, React</p>
+                <p>Java, Spring Boot, Spring Security, PostgreSQL,<br>
+                    React, TypeScript, Tailwind CSS, Docker, GitHub Pages</p>
 
             </div>
         </div>
         <hgroup>
             <h1 class="PR-Title">GYM PROGRESS LEAGUE</h1>
+            <div class="GTPics">
+                <img src="images/CommunityDetail.png" alt="GymLeague Community Detail Screenshot">
+                <img src="images/CommunityRanking.png" alt="GymLeague Community Ranking Screenshot">
+            </div>
             <div class="PrDesc">
                 <div class="Overview">
                     <h1>OVERVIEW</h1>
-                    <p>Gym Progress League is a modern full-stack web application designed for small groups to track
-                        strength progress and compete through weekly community rankings. Users will be able to create an
-                        account, log squat, bench press and deadlift sessions, join private communities and monitor
-                        their personal records and estimated one-repetition maximum (1RM) over time.</p>
+                    <p>Gym Progress League is a full-stack web application for tracking strength-training progress in
+                        small communities. Users can create an account, log weighted exercise sets, monitor estimated
+                        one-repetition maximums and compare rankings with other community members.</p>
+
+                    <p>The project was built as a learning and portfolio project to improve my understanding of Spring
+                        Boot, REST APIs, authentication, database design and full-stack web development. The visual
+                        design is intentionally simple, as the main focus was the backend architecture and the
+                        connection between frontend, API and database.</p>
                 </div>
                 <div class="MyP">
-                    <h1>GOALS & IMPLEMENTATION</h1>
-                    <p>The application will be built using Java Spring Boot, Vue and PostgreSQL following a REST-based
-                        architecture. Besides creating a practical application for everyday use, the project aims to
-                        deepen my knowledge of full-stack development, REST APIs, backend architecture, authentication
-                        and database design.</p>
+                    <h1>FEATURES & IMPLEMENTATION</h1>
+                    <p>The application includes account registration, session-based login, exercise entry tracking,
+                        estimated 1RM calculations, public and private communities, member roles, activity logs and
+                        community rankings.</p>
+
+                    <p>
+                        It is built with a Spring Boot REST API, PostgreSQL and a React frontend. The backend follows a
+                        controller-service-repository structure and uses DTOs, validation and JPA entities to separate
+                        API input, business logic and persistence. Authentication uses server-side sessions with CSRF
+                        protection, while the frontend communicates with the API through credentialed
+                        CORS requests.</p>
                 </div>
             </div>
             <div class="GHLink">
-                <h1>PLANNED FEATURES</h1>
-                <p>User authentication<br>
-                    Lift tracking<br>
-                    Private communities<br>
-                    Weekly leaderboards<br>
-                    Estimated 1RM calculation</p>
+                <h1>LIVE PROJECT</h1>
+                <h2>HOSTED VERSION</h2>
+                <p>The frontend is hosted on GitHub Pages and can be accessed here:</p>
+                <a href="https://gymleague.paulbankl.dev" target="_blank">gymleague.paulbankl.dev</a>
+                <p>The frontend is hosted on GitHub Pages, while the backend API runs separately and may not always be
+                    available.</p>
+
+                <h2>GITHUB</h2>
+                <p>The full source code is available on GitHub:</p>
+                <a href="https://github.com/PaulBankl/GymLeague" target="_blank">github.com/PaulBankl/GymLeague</a>
             </div>
         </hgroup>
         <hr>
