@@ -881,6 +881,9 @@ p {
 .GHLink a:hover {
     text-decoration: underline;
 }
+.GHLink a {
+    text-decoration: underline;
+}
 
 
 
@@ -979,6 +982,7 @@ p {
     #Education {
         height: auto;
     }
+
 
     .edu {
         width: 80vw;
