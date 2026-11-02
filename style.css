@@ -13,7 +13,8 @@ body {
 
 /* Intro Area */
 #IntroArea {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     margin: 0;
@@ -159,7 +160,8 @@ hr {
 /* Education */
 
 #Education {
-    height: 55vh;
+    min-height: 55vh;
+    height: auto;
     margin: 0;
 }
 
@@ -616,6 +618,7 @@ hr {
     z-index: 100;
     width: 100vw;
     height: 6vh;
+    min-height: 3rem;
     border-bottom: 1px solid gray;
     display: flex;
     flex-direction: row;
@@ -783,6 +786,7 @@ hr {
 }
 
 .project-video-wrapper p,
+.diary-caption,
 a {
     margin-top: 1vh;
     font-family: "Jost", sans-serif;
@@ -895,6 +899,41 @@ p {
     margin-top: 10vh;
 }
 
+/* Social Diary: keep each screenshot's original proportions. */
+#SD-Project hr {
+    width: 80vw;
+    margin: 10vh auto 0;
+}
+
+#SD-Project > .GHLink {
+    width: 80vw;
+}
+
+.GTPics--diary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+}
+
+.GTPics--diary img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.diary-caption {
+    width: 80vw;
+    margin-inline: auto;
+}
+
+@media (max-width: 900px) {
+    .GTPics--diary {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 /* More Coming Soon Section */
@@ -980,6 +1019,7 @@ p {
     }
 
     #Education {
+        min-height: 0;
         height: auto;
     }
 
@@ -1205,6 +1245,32 @@ p {
     }
 }
 
+/* Use the existing stacked skill cards before their columns become too narrow. */
+@media (max-width: 767px) {
+    #SkillList {
+        flex-direction: column;
+    }
+
+    #skillbox1,
+    #skillbox2,
+    #skillbox3 {
+        border-right: 1px solid gray;
+    }
+
+    #skillbox2,
+    #skillbox3 {
+        border-top: none;
+    }
+
+    #TechGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .SkGrid p:last-child {
+        padding-bottom: 1rem;
+    }
+}
+
 /* Phone */
 @media (max-width: 600px) {
 
@@ -1262,25 +1328,6 @@ p {
         flex-basis: 100%;
     }
 
-    #SkillList {
-        flex-direction: column;
-    }
-
-    #skillbox1,
-    #skillbox2,
-    #skillbox3 {
-        border-right: 1px solid gray;
-    }
-
-    #skillbox2,
-    #skillbox3 {
-        border-top: none;
-    }
-
-    #TechGrid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
     #MoreProjects {
         width: 80vw;
     }
@@ -1302,10 +1349,6 @@ p {
         height: 1px;
         min-height: 0;
         margin: 0;
-    }
-
-    .SkGrid p:last-child {
-        padding-bottom: 1rem;
     }
 
     .ProjectDate,
